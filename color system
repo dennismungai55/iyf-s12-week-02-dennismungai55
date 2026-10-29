@@ -1,0 +1,242 @@
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+/* =================================
+   1. DESIGN SYSTEM: VARIABLES
+================================= */
+:root {
+    /* Typography */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+
+    /* Type scale */
+    --font-xs: 0.75rem;       /* 12px */
+    --font-sm: 0.875rem;      /* 14px */
+    --font-base: 1rem;        /* 16px */
+    --font-lg: 1.125rem;      /* 18px */
+    --font-xl: 1.25rem;       /* 20px */
+    --font-2xl: 1.5rem;       /* 24px */
+    --font-3xl: 1.875rem;     /* 30px */
+    --font-4xl: 2.25rem;      /* 36px */
+
+    /* Font weights */
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+
+    /* Line heights */
+    --leading-tight: 1.2;
+    --leading-normal: 1.6;
+
+    /* Main colors */
+    --color-primary: #2563EB;
+    --color-secondary: #14B8A6;
+    --color-background: #F8FAFC;
+    --color-text: #0F172A;
+    --color-muted: #64748B;
+
+    /* Color variations */
+    --color-primary-light: #93C5FD;
+    --color-primary-dark: #1D4ED8;
+    --color-secondary-dark: #0F766E;
+    --color-white: #FFFFFF;
+    --color-border: #E2E8F0;
+    --color-surface: #FFFFFF;
+}
+
+/* =================================
+   2. GLOBAL STYLES
+================================= */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: var(--font-base);
+    font-weight: var(--weight-regular);
+    line-height: var(--leading-normal);
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+/* =================================
+   3. HEADINGS
+================================= */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-text);
+    line-height: var(--leading-tight);
+    margin-top: 0;
+}
+
+h1 {
+    font-size: var(--font-4xl);
+    font-weight: var(--weight-bold);
+}
+
+h2 {
+    font-size: var(--font-3xl);
+    font-weight: var(--weight-semibold);
+}
+
+h3 {
+    font-size: var(--font-2xl);
+    font-weight: var(--weight-semibold);
+}
+
+h4 {
+    font-size: var(--font-xl);
+    font-weight: var(--weight-medium);
+}
+
+/* =================================
+   4. BODY TEXT
+================================= */
+p {
+    font-size: var(--font-base);
+    color: var(--color-text);
+    line-height: var(--leading-normal);
+}
+
+small,
+.text-small {
+    font-size: var(--font-sm);
+}
+
+.text-muted {
+    color: var(--color-muted);
+}
+
+.text-highlight {
+    color: var(--color-primary);
+}
+
+/* =================================
+   5. LINKS + HOVER STATES
+================================= */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
+}
+
+/* =================================
+   6. BUTTONS
+================================= */
+button,
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: 0.375rem;
+    font-family: var(--font-body);
+    font-size: var(--font-sm);
+    font-weight: var(--weight-semibold);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+button:hover,
+.button:hover {
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+}
+
+button:active,
+.button:active {
+    transform: translateY(1px);
+}
+
+button:focus-visible,
+.button:focus-visible {
+    outline: 3px solid var(--color-primary-light);
+    outline-offset: 3px;
+}
+
+/* Secondary button */
+.button-secondary {
+    background-color: var(--color-secondary-dark);
+    color: var(--color-white);
+}
+
+.button-secondary:hover {
+    background-color: #115E59;
+}
+
+/* =================================
+   7. BACKGROUNDS & SURFACES
+================================= */
+section {
+    padding: 3rem 1.5rem;
+    background-color: var(--color-background);
+}
+
+.card {
+    padding: 1.5rem;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 0.75rem;
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+}
+
+.bg-light {
+    background-color: var(--color-background);
+}
+
+.bg-dark {
+    background-color: var(--color-text);
+    color: var(--color-white);
+}
+
+/* =================================
+   8. RESPONSIVE TYPOGRAPHY
+================================= */
+@media (max-width: 768px) {
+    h1 {
+        font-size: var(--font-3xl);
+    }
+
+    h2 {
+        font-size: var(--font-2xl);
+    }
+
+    h3 {
+        font-size: var(--font-xl);
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+}
