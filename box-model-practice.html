@@ -1,0 +1,56 @@
+/* box model visualisation*/
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+  padding: 20px;
+  border: 4px solid black;
+  margin: 20px;
+}
+/* debug the layout*/
+
+.broken-box {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 20px;
+    border: none;
+}
+/*card component*/
+
+.card {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card-description {
+    margin: 0 0 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.card-button {
+    margin-top: auto;
+    padding: 10px 15px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
