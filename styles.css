@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="styles.css">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size:16px;
+    line-heading:1.6;
+    font-color:blue;
+    
+}
+h1,h6{
+  font-size:13px;
+}
+  
