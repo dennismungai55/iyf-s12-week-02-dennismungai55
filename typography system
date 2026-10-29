@@ -1,0 +1,96 @@
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+:root {
+    /* Font families */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+
+    /* Type scale */
+    --font-xs: 0.75rem;      /* 12px */
+    --font-sm: 0.875rem;     /* 14px */
+    --font-base: 1rem;       /* 16px */
+    --font-lg: 1.125rem;     /* 18px */
+    --font-xl: 1.25rem;      /* 20px */
+    --font-2xl: 1.5rem;      /* 24px */
+    --font-3xl: 1.875rem;    /* 30px */
+    --font-4xl: 2.25rem;     /* 36px */
+
+    /* Font weights */
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+
+    /* Line heights */
+    --leading-tight: 1.2;
+    --leading-normal: 1.6;
+    --leading-relaxed: 1.75;
+}
+
+/* Base styles */
+body {
+    font-family: var(--font-body);
+    font-size: var(--font-base);
+    font-weight: var(--weight-regular);
+    line-height: var(--leading-normal);
+}
+
+/* Portfolio headings */
+h1 {
+    font-family: var(--font-heading);
+    font-size: var(--font-4xl);
+    font-weight: var(--weight-bold);
+    line-height: var(--leading-tight);
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: var(--font-3xl);
+    font-weight: var(--weight-semibold);
+    line-height: var(--leading-tight);
+}
+
+h3 {
+    font-family: var(--font-heading);
+    font-size: var(--font-2xl);
+    font-weight: var(--weight-semibold);
+    line-height: var(--leading-tight);
+}
+
+/* Body and small text */
+p {
+    font-family: var(--font-body);
+    font-size: var(--font-base);
+    line-height: var(--leading-normal);
+}
+
+small,
+.text-small {
+    font-family: var(--font-body);
+    font-size: var(--font-sm);
+}
+
+/* Navigation and buttons */
+nav,
+button {
+    font-family: var(--font-body);
+    font-size: var(--font-sm);
+    font-weight: var(--weight-semibold);
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+    h1 {
+        font-size: var(--font-3xl);
+    }
+
+    h2 {
+        font-size: var(--font-2xl);
+    }
+
+    h3 {
+        font-size: var(--font-xl);
+    }
+}
