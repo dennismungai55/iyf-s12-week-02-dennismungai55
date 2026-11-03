@@ -80,6 +80,53 @@
     box-sizing: border-box;
     background-color: lightgreen;
 }
+    
+/* =================================
+   EXERCISE 3: CARD COMPONENT
+================================= */
+
+.card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.card h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.card button {
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #1e40af;
+}
+
 
         
     </style>
@@ -172,6 +219,40 @@
     </div>
 
 </section>
+
+        
+<!-- EXERCISE 3: CARD COMPONENT -->
+
+<section class="card-exercise">
+
+    <h2>Exercise 3: Card Component</h2>
+
+    <p>Practice creating a card with exact spacing.</p>
+
+    <div class="card">
+
+        <!-- Card Image -->
+        <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600"
+            alt="Laptop showing a web development workspace"
+        >
+
+        <!-- Card Title -->
+        <h2>Web Development</h2>
+
+        <!-- Card Description -->
+        <p>
+            I am learning HTML, CSS, and JavaScript
+            to build beautiful and responsive websites.
+        </p>
+
+        <!-- Card Button -->
+        <button type="button">Learn More</button>
+
+    </div>
+
+</section>
+
 
         
 
