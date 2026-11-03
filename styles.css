@@ -191,3 +191,53 @@ footer {
 .highlight {
     color: var(--color-secondary);
 }
+
+/* =================================
+   TASK 4.1: FLEXBOX NAVIGATION BAR
+================================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--color-primary);
+}
+
+.logo {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-xl);
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: var(--color-secondary);
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
