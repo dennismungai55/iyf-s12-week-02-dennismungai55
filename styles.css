@@ -1,9 +1,7 @@
 
 /* ==========================================
    DENNIS PORTFOLIO
-   COMPLETE WEEK 02 STYLESHEET
-   FLEXBOX + CSS GRID + RESPONSIVE DESIGN
-========================================== */
+   
 
 
 /* ==========================================
@@ -774,4 +772,19 @@ a:hover {
 .project-card,
 .flex-card {
     transition: all 0.3s ease;
+}
+/* Smooth transitions */
+.button,
+.hero-button,
+.contact-form button,
+.project-card,
+.flex-card,
+a {
+    transition: all 0.3s ease;
+}
+/* Focus States - Accessibility */
+a:focus,
+button:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
 }
