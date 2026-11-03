@@ -741,3 +741,37 @@ button:hover {
     }
 
 }
+/* =================================
+   TASK 4.4: POLISH & REFINEMENT
+================================= */
+
+/* Buttons */
+.button:hover,
+.hero-button:hover,
+.contact-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Links */
+a:hover {
+    color: var(--color-primary);
+}
+
+/* Project cards */
+.project-card:hover,
+.flex-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+/* Smooth transitions */
+.button,
+.hero-button,
+.contact-form button,
+.project-card,
+.flex-card {
+    transition: all 0.3s ease;
+}
