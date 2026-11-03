@@ -487,6 +487,78 @@ footer {
     }
 }
 
+/* =================================
+   TASK 4.2: RESPONSIVE PROJECT GRID
+================================= */
+
+.projects-page {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.projects-page > h1,
+.projects-page > p {
+    text-align: center;
+}
+
+/* Desktop: 3 columns */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Project cards */
+.project-card {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card h2 {
+    font-size: var(--font-xl);
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: var(--font-sm);
+}
+
+.project-card a {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.project-card a:hover {
+    background-color: var(--color-primary-dark);
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 500px) {
     .photo-gallery {
         grid-template-columns: 1fr;
