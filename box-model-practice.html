@@ -61,6 +61,27 @@
             background-color: white;
             border: 2px solid #333;
         }
+        
+/* EXERCISE 2: DEBUG THE LAYOUT */
+
+/* Broken box - total width becomes 340px */
+.broken-box {
+    width: 300px;
+    padding: 20px;
+    border: none;
+    background-color: lightcoral;
+}
+
+/* Fixed box - total width becomes exactly 300px */
+.fixed-box {
+    width: 300px;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    background-color: lightgreen;
+}
+
+        
     </style>
 </head>
 
@@ -131,6 +152,28 @@
             </p>
 
         </section>
+
+<section class="debug-exercise">
+
+    <h2>Exercise 2: Debug the Layout</h2>
+
+    <p>Compare the broken box with the fixed box.</p>
+
+    <h3>Broken Box (340px wide)</h3>
+
+    <div class="broken-box">
+        Broken Box - 300px declared width
+    </div>
+
+    <h3>Fixed Box (300px wide)</h3>
+
+    <div class="fixed-box">
+        Fixed Box - 300px total width
+    </div>
+
+</section>
+
+        
 
     </main>
 
