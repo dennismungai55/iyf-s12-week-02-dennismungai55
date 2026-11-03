@@ -400,6 +400,93 @@ footer {
     }
 }
 
+/* =================================
+   TASK 4.2: MAGAZINE GRID LAYOUT
+================================= */
+
+.magazine-layout {
+    display: grid;
+
+    /* Two columns: sidebar and main content */
+    grid-template-columns: 250px 1fr;
+
+    /* Header, content and footer rows */
+    grid-template-rows: auto 1fr auto;
+
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer";
+
+    gap: 20px;
+
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Header */
+.magazine-header {
+    grid-area: header;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.magazine-header h1 {
+    color: white;
+}
+
+/* Sidebar */
+.magazine-sidebar {
+    grid-area: sidebar;
+    background-color: var(--color-primary-light);
+    padding: 20px;
+}
+
+.magazine-sidebar ul {
+    padding-left: 20px;
+}
+
+.magazine-sidebar li {
+    margin-bottom: 10px;
+}
+
+/* Main Content */
+.magazine-content {
+    grid-area: content;
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #ddd;
+}
+
+/* Footer */
+.magazine-footer {
+    grid-area: footer;
+    background-color: var(--color-text);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.magazine-footer p {
+    margin-bottom: 0;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .magazine-layout {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "content"
+            "footer";
+    }
+}
+
 @media (max-width: 500px) {
     .photo-gallery {
         grid-template-columns: 1fr;
