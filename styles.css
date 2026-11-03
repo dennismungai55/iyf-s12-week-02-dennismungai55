@@ -241,3 +241,55 @@ footer {
         gap: 15px;
     }
 }
+
+/* =================================
+   TASK 4.1: FLEXBOX CARD ROW
+================================= */
+
+.card-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flex-card {
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.flex-card h3 {
+    margin-bottom: 15px;
+}
+
+.flex-card p {
+    margin-bottom: 20px;
+}
+
+.card-link {
+    margin-top: auto;
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card-link:hover {
+    background-color: var(--color-primary-dark);
+    color: white;
+}
