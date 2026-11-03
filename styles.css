@@ -293,3 +293,73 @@ footer {
     background-color: var(--color-primary-dark);
     color: white;
 }
+
+/* =================================
+   TASK 4.1: FLEXBOX FOOTER
+================================= */
+
+.site-footer {
+    background-color: var(--color-text);
+    color: white;
+    padding: 40px 30px 15px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1 1 200px;
+}
+
+.footer-column h3 {
+    color: white;
+    font-size: var(--font-xl);
+    margin-bottom: 15px;
+}
+
+.footer-column p {
+    color: #CBD5E1;
+    font-size: var(--font-sm);
+}
+
+.footer-column a {
+    display: block;
+    color: #CBD5E1;
+    margin-bottom: 10px;
+}
+
+.footer-column a:hover {
+    color: var(--color-secondary);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #475569;
+    margin-top: 30px;
+    padding-top: 15px;
+}
+
+.footer-bottom p {
+    margin-bottom: 0;
+    font-size: var(--font-sm);
+    color: #CBD5E1;
+}
+
+/* Responsive footer */
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+}
