@@ -1,109 +1,241 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Projects | My Portfolio</title>
+    <title>My Projects | Dennis Portfolio</title>
 
-    <!-- Link CSS -->
+    <!-- Link to external CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <h2>My Portfolio</h2>
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <header class="navbar">
+
+        <div class="logo">
+            Dennis Portfolio
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Projects</a>
+            <a href="contact.html">Contact</a>
         </nav>
+
     </header>
 
-    <!-- Projects Section -->
-    <main>
-        <section class="projects">
 
-            <h1>My Projects</h1>
+    <!-- =========================
+         PROJECTS SECTION
+    ========================== -->
 
-            <p>
-                Welcome to my project portfolio!
-                Here are some of the projects I have worked on
-                while learning web development.
-            </p>
+    <main class="projects-page">
 
-            <!-- Project 1 -->
-            <article class="project-card">
-                <h2>Personal Portfolio Website</h2>
+        <h1>My Projects</h1>
+
+        <p>
+            Welcome to my projects page.
+            Explore some of the projects I have been working on
+            as I develop my web development skills.
+        </p>
+
+
+        <!-- RESPONSIVE PROJECT GRID -->
+
+        <div class="projects-grid">
+
+            <!-- PROJECT 1 -->
+            <div class="project-card">
+
+                <h2>Personal Portfolio</h2>
 
                 <p>
-                    A personal website designed to introduce myself,
-                    showcase my skills, and display my projects.
+                    A personal website showcasing my skills,
+                    background, achievements and projects.
                 </p>
 
-                <h3>Technologies Used</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
+                <p>
+                    <strong>Technologies:</strong>
+                    HTML, CSS
+                </p>
 
-                <a href="#" target="_blank">View Project</a>
-            </article>
+                <a href="about.html">View Project</a>
 
-            <!-- Project 2 -->
-            <article class="project-card">
+            </div>
+
+
+            <!-- PROJECT 2 -->
+            <div class="project-card">
+
                 <h2>Weather Dashboard</h2>
 
                 <p>
-                    A weather dashboard designed to display
-                    weather information in a simple and
-                    user-friendly interface.
+                    A dashboard that displays weather information
+                    for different locations.
                 </p>
 
-                <h3>Technologies Used</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
+                <p>
+                    <strong>Technologies:</strong>
+                    HTML, CSS, JavaScript
+                </p>
 
-                <a href="#" target="_blank">View Project</a>
-            </article>
+                <a href="#">View Project</a>
 
-            <!-- Project 3 -->
-            <article class="project-card">
+            </div>
+
+
+            <!-- PROJECT 3 -->
+            <div class="project-card">
+
                 <h2>Flood Navi</h2>
 
                 <p>
-                    A project focused on helping users access
-                    flood-related information and improve
-                    awareness of flood risks.
+                    A project designed to help people access
+                    flood-related information and updates.
                 </p>
 
-                <h3>Technologies Used</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
+                <p>
+                    <strong>Technologies:</strong>
+                    HTML, CSS, JavaScript
+                </p>
 
-                <a href="#" target="_blank">View Project</a>
-            </article>
+                <a href="#">View Project</a>
 
-        </section>
+            </div>
+
+
+            <!-- PROJECT 4 -->
+            <div class="project-card">
+
+                <h2>Project Four</h2>
+
+                <p>
+                    A new project I am planning to build
+                    to improve my development skills.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    HTML, CSS
+                </p>
+
+                <a href="#">View Project</a>
+
+            </div>
+
+
+            <!-- PROJECT 5 -->
+            <div class="project-card">
+
+                <h2>Project Five</h2>
+
+                <p>
+                    A website project where I practise
+                    interactive web development.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    HTML, CSS, JavaScript
+                </p>
+
+                <a href="#">View Project</a>
+
+            </div>
+
+
+            <!-- PROJECT 6 -->
+            <div class="project-card">
+
+                <h2>Project Six</h2>
+
+                <p>
+                    A creative project where I practise
+                    responsive web design.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    HTML, CSS
+                </p>
+
+                <a href="#">View Project</a>
+
+            </div>
+
+        </div>
+
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 My Portfolio. All Rights Reserved.</p>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <!-- ABOUT COLUMN -->
+            <div class="footer-column">
+
+                <h3>About</h3>
+
+                <p>
+                    I am a beginner web developer learning
+                    HTML, CSS and JavaScript.
+                </p>
+
+            </div>
+
+
+            <!-- LINKS COLUMN -->
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="project.html">Projects</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <!-- CONTACT COLUMN -->
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <p>Email: your-email@example.com</p>
+                <p>Phone: Your phone number</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Dennis Portfolio.
+                All rights reserved.
+            </p>
+
+        </div>
+
     </footer>
 
 </body>
 </html>
+```
